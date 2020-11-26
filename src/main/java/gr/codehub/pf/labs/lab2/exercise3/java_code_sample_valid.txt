@@ -1,0 +1,22 @@
+package gr.codehub;
+
+public class PrintRandomNumbers {
+    public static void main(String[] args) {
+        int max,size;
+        max = size = 10;
+        int min = 0;
+
+        Integer[] random_integers = new Integer[size];
+
+        for (int i = 0; i < size; i++) {
+            random_integers[i] = (int)((Math.random() * (max - min)) + min);
+        }
+
+        for (Integer random_number : random_integers) {
+            System.out.println(random_number);
+        }
+    }
+}
+
+
+
